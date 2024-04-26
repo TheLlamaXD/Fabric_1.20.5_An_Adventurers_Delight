@@ -21,7 +21,10 @@ public class Items {
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(AnAdventurersDelight.MOD_ID, name), item);
+
+
     }
+
 
     private static void ItemGroupIngrediants(FabricItemGroupEntries entries){
         entries.add(SamuraiArmorTrim);
@@ -32,6 +35,8 @@ public class Items {
         AnAdventurersDelight.LOGGER.info("Registering Mod Items for " + AnAdventurersDelight.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(Items::ItemGroupIngrediants);
+
+
     }
 
 }
