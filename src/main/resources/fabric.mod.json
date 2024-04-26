@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "an-adventurers-delight",
+	"version": "${version}",
+	"name": "An Adventurer's Delight",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/an-adventurers-delight/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dongurs.delightfull.AnAdventurersDelight"
+		],
+		"fabric-datagen": [
+			"net.dongurs.delightfull.AnAdventurersDelightDataGenerator"
+		],
+		"client": [
+			"net.dongurs.delightfull.AnAdventurersDelightClient"
+		]
+	},
+	"mixins": [
+		"an-adventurers-delight.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
